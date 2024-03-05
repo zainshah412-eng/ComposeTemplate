@@ -10,5 +10,5 @@ interface CoinRepository {
 
     suspend fun getCoinById(coinId: String): CoinDetailDto
 
-    suspend fun getLogin(): LoginResponse
+    suspend fun getLogin(url:String): LoginResponse
 }

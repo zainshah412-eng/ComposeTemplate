@@ -1,5 +1,7 @@
-package com.plcoding.woox.common
+package com.plcoding.woox.common.utils
 
+import android.content.Context
+import android.widget.Toast
 import androidx.navigation.NavController
 
 fun NavController.moveOnNewScreen(id: String, isClear: Boolean = false) {
@@ -11,3 +13,6 @@ fun NavController.moveOnNewScreen(id: String, isClear: Boolean = false) {
         }
     }
 }
+
+fun Context.toast(message: CharSequence) =
+    Toast.makeText(this, message, Toast.LENGTH_SHORT).show()

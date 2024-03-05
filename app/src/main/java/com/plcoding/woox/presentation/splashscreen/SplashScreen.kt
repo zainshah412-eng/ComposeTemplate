@@ -16,7 +16,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import com.plcoding.woox.R
-import com.plcoding.woox.common.moveOnNewScreen
+import com.plcoding.woox.common.utils.moveOnNewScreen
 import com.plcoding.woox.route.Screen
 import kotlinx.coroutines.delay
 

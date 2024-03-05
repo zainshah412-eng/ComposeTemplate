@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">Woox</string>
+    <string name="no_internet">No Internet Available</string>
 
-    <string name="email">Email</string>
-    <string name="enter_your_email">Enter your email</string>
+    <string name="username">Username</string>
+    <string name="enter_your_username">Enter your username</string>
     <string name="enter_your_password">Enter your password</string>
     <string name="password">Password</string>
     <string name="login">Login</string>

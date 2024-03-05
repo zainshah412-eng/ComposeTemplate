@@ -23,11 +23,11 @@ class LoginViewModel @Inject constructor(
     val state: State<LoginState> = _state
 
     init {
-        getLogin()
+       // getLogin()
     }
 
-     fun getLogin() {
-        getLoginUseCase().onEach { result ->
+     fun getLogin(url:String) {
+        getLoginUseCase(url).onEach { result ->
             when (result) {
                 is Resource.Success -> {
                     _state.value = LoginState(loginResponse = result.data)

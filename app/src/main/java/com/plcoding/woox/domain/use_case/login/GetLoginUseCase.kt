@@ -14,10 +14,10 @@ import javax.inject.Inject
 class GetLoginUseCase @Inject constructor(
     private val repository: CoinRepository
 ) {
-    operator fun invoke(): Flow<Resource<LoginResponse>> = flow {
+    operator fun invoke(url:String): Flow<Resource<LoginResponse>> = flow {
         try {
             emit(Resource.Loading<LoginResponse>())
-            val coin = repository.getLogin()
+            val coin = repository.getLogin(url)
             Log.d("DATA",coin.toString())
             emit(Resource.Success<LoginResponse>(coin))
         } catch(e: HttpException) {
