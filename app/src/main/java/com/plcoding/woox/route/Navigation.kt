@@ -4,17 +4,17 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.plcoding.woox.presentation.coin_detail.CoinDetailScreen
-import com.plcoding.woox.presentation.coin_list.CoinListScreen
-import com.plcoding.woox.presentation.loginscreen.LoginScreen
-import com.plcoding.woox.presentation.splashscreen.SplashScreen
-import com.plcoding.woox.presentation.welcomescreen.WelcomeScreen
+import com.plcoding.woox.ui.screens.coin_detail.CoinDetailScreen
+import com.plcoding.woox.ui.screens.coin_list.CoinListScreen
+import com.plcoding.woox.ui.screens.loginscreen.LoginScreen
+import com.plcoding.woox.ui.screens.splashscreen.SplashScreen
+import com.plcoding.woox.ui.screens.welcomescreen.WelcomeScreen
 
 @Composable
 fun Navigation(navController: NavHostController) {
     NavHost(
         navController = navController,
-        startDestination = Screen.LoginScreen.route
+        startDestination = Screen.SplashScreen.route
     ) {
         composable(
             route = Screen.SplashScreen.route
